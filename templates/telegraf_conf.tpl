@@ -5644,12 +5644,12 @@
 
 
 # # Read metrics about network interface usage
-# [[inputs.net]]
+[[inputs.net]]
 #   ## By default, telegraf gathers stats from any up interface (excluding loopback)
 #   ## Setting interfaces will tell it to gather these explicit interfaces,
 #   ## regardless of status.
 #   ##
-#   # interfaces = ["eth0"]
+#   interfaces = ["*"]
 #   ##
 #   ## On linux systems telegraf also collects protocol stats.
 #   ## Setting ignore_protocol_stats to true will skip reporting of protocol metrics.
@@ -5686,7 +5686,7 @@
 
 
 # # Read TCP metrics such as established, time wait and sockets counts.
-# [[inputs.netstat]]
+[[inputs.netstat]]
 #   # no configuration
 
 
@@ -5696,7 +5696,7 @@
 #   # fullstat = false
 #
 #   ## List of mounts to explictly include or exclude (optional)
-#   ## The pattern (Go regexp) is matched against the mount point (not the
+#   ## The pattern (Go regexp) is matched against the mount point (not then
 #   ## device being mounted).  If include_mounts is set, all mounts are ignored
 #   ## unless present in the list. If a mount is listed in both include_mounts
 #   ## and exclude_mounts, it is excluded.  Go regexp patterns can be used.
@@ -6265,11 +6265,11 @@
 
 
 # # Monitor process cpu and memory usage
-# [[inputs.procstat]]
+[[inputs.procstat]]
 #   ## PID file to monitor process
 #   pid_file = "/var/run/nginx.pid"
 #   ## executable name (ie, pgrep <exe>)
-#   # exe = "nginx"
+    exe = ".*"
 #   ## pattern as argument for pgrep (ie, pgrep -f <pattern>)
 #   # pattern = "nginx"
 #   ## user as argument for pgrep (ie, pgrep -u <user>)
