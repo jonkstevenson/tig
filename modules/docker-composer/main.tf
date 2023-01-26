@@ -83,6 +83,31 @@ resource "null_resource" "update_environment_token" {
   ]
 }
 
+
+resource "null_resource" "update_default_telegraf_config" {
+  provisioner "local-exec" {
+    when = create
+    command = "cp ./install_tig/telegraf/telegraf.conf /etc/telegraf/telegraf.conf"
+  }
+  depends_on = [
+    null_resource.update_environment_token
+
+  ]
+}
+
+resource "null_resource" "restart_local_telegraf" {
+  provisioner "local-exec" {
+    when = create
+    command = "systemctl daemon-reload && systemctl enable telegraf && systemctl restart telegraf"
+  }
+  depends_on = [
+    null_resource.update_environment_token
+
+  ]
+}
+
+
+
 resource "null_resource" "docker_composer_install_tig" {
   provisioner "local-exec" {
     when = create

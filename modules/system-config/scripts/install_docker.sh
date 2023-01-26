@@ -18,10 +18,8 @@ EOF
 curl -sL https://repos.influxdata.com/influxdb.key | apt-key add -
 apt update
 apt install telegraf -y
-## copy new config file into place
-cp ./install_tig/telegraf/telegraf.conf /etc/telegraf/telegraf.conf
+
 ## start running
 systemctl daemon-reload
 systemctl enable telegraf
-systemctl start telegraf
-systemctl restart telegraf
+
