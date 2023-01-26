@@ -22,11 +22,11 @@ variable "DOCKER_INFLUXDB_INIT_PASSWORD" {
   default     = "adminpwd"
 }
 
-variable "DOCKER_INFLUXDB_INIT_ADMIN_TOKEN" {
-  description = "DOCKER_INFLUXDB_INIT_ADMIN_TOKEN"
-  type        = string
-  default     = "39477970d8cb52692dcfc689f1a2614ac074ca94e5e231489fbcaa00ccac7763"
-}
+#variable "DOCKER_INFLUXDB_INIT_ADMIN_TOKEN" {
+#  description = "DOCKER_INFLUXDB_INIT_ADMIN_TOKEN"
+ # type        = string
+ # default     = "39477970d8cb52692dcfc689f1a2614ac074ca94e5e231489fbcaa00ccac7763"
+#}
 
 # Primary InfluxDB organization & bucket definitions FLUX
 #

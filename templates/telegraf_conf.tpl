@@ -989,7 +989,7 @@
   urls = ["http://DOCKER_INFLUXDB_HOSTNAME:${DOCKER_INFLUXDB_INIT_PORT}"]
 
   ## Token for authentication.
-  token = "${DOCKER_INFLUXDB_INIT_ADMIN_TOKEN}"
+  token = "DOCKER_INFLUXDB_INIT_ADMIN_TOKEN"
 
   ## Organization is the name of the organization you wish to write to; must exist.
   organization = "${DOCKER_INFLUXDB_INIT_ORG}"
