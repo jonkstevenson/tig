@@ -13,13 +13,13 @@ variable "DOCKER_INFLUXDB_INIT_MODE" {
 variable "DOCKER_INFLUXDB_INIT_USERNAME" {
   description = "DOCKER_INFLUXDB_INIT_USERNAME"
   type        = string
-  default     = "jon"
+
 }
 
 variable "DOCKER_INFLUXDB_INIT_PASSWORD" {
   description = "DOCKER_INFLUXDB_INIT_PASSWORD"
   type        = string
-  default     = "adminpwd"
+
 }
 
 #variable "DOCKER_INFLUXDB_INIT_ADMIN_TOKEN" {
@@ -39,12 +39,12 @@ variable "DOCKER_INFLUXDB_INIT_PASSWORD" {
 variable "DOCKER_INFLUXDB_INIT_ORG" {
   description = "DOCKER_INFLUXDB_INIT_ORG"
   type        = string
-  default     = "jon"
+
 }
 variable "DOCKER_INFLUXDB_INIT_BUCKET" {
   description = "DOCKER_INFLUXDB_INIT_BUCKET"
   type        = string
-  default     = "telegraf"
+
 }
 
 # Primary InfluxDB bucket retention period
@@ -54,7 +54,7 @@ variable "DOCKER_INFLUXDB_INIT_BUCKET" {
 variable "DOCKER_INFLUXDB_INIT_RETENTION" {
   description = "DOCKER_INFLUXDB_INIT_RETENTION"
   type        = string
-  default     = "4d"
+
 }
 
 # InfluxDB port & hostname definitions
@@ -62,12 +62,12 @@ variable "DOCKER_INFLUXDB_INIT_RETENTION" {
 variable "DOCKER_INFLUXDB_INIT_PORT" {
   description = "DOCKER_INFLUXDB_INIT_PORT"
   type        = number
-  default     = 8086
+
 }
 variable "DOCKER_INFLUXDB_INIT_HOST" {
   description = "DOCKER_INFLUXDB_INIT_HOST"
   type        = string
-  default     = "influxdb"
+
 }
 
 # Telegraf configuration file
@@ -76,13 +76,13 @@ variable "DOCKER_INFLUXDB_INIT_HOST" {
 variable "TELEGRAF_CFG_PATH" {
   description = "TELEGRAF_CFG_PATH"
   type        = string
-  default     = "./telegraf/telegraf.conf"
+
 }
 
 # Grafana port definition
 variable "GRAFANA_PORT" {
   description = "GRAFANA_PORT"
   type = number
-  default     = 3000
+
 }
 

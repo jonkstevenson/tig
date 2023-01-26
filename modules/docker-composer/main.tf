@@ -133,3 +133,17 @@ resource "null_resource" "docker_composer_install_tig" {
 
   ]
 }
+
+
+resource "null_resource" "update_grafana_password" {
+  provisioner "local-exec" {
+    when = create
+    command = "sleep 30 && docker exec install_tig_grafana_1 grafana-cli admin reset-admin-password ${var.DOCKER_INFLUXDB_INIT_PASSWORD}"
+  }
+
+  depends_on = [
+    null_resource.docker_composer_install_tig
+
+  ]
+}
+

@@ -49,20 +49,20 @@ variable "DOCKER_INFLUXDB_INIT_MODE" {
 variable "DOCKER_INFLUXDB_INIT_USERNAME" {
   description = "DOCKER_INFLUXDB_INIT_USERNAME"
   type        = string
-  default     = "jon"
+
 }
 
 variable "DOCKER_INFLUXDB_INIT_PASSWORD" {
   description = "DOCKER_INFLUXDB_INIT_PASSWORD"
   type        = string
-  default     = "adminpwd"
+  default     = "admin"
 }
 
 
 variable "DOCKER_INFLUXDB_INIT_ORG" {
   description = "DOCKER_INFLUXDB_INIT_ORG"
   type        = string
-  default     = "jon"
+
 }
 variable "DOCKER_INFLUXDB_INIT_BUCKET" {
   description = "DOCKER_INFLUXDB_INIT_BUCKET"
