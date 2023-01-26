@@ -1,4 +1,5 @@
 #!/bin/bash
+# setup
 # update and check for new packages
 apt update
 # install the pre-req for docker 

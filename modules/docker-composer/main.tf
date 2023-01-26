@@ -86,11 +86,11 @@ resource "null_resource" "update_environment_token" {
 resource "null_resource" "docker_composer_install_tig" {
   provisioner "local-exec" {
     when = create
-    command = "cd ./install_tig && docker-composer up -d"
+    command = "cd ./install_tig && docker-compose up -d"
   }
   provisioner "local-exec" {
     when = destroy
-    command = "cd ./install_tig && docker-composer down"
+    command = "cd ./install_tig && docker-compose down"
   }
   depends_on = [
     null_resource.update_environment_token
