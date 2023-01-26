@@ -58,19 +58,6 @@ variable "DOCKER_INFLUXDB_INIT_PASSWORD" {
   default     = "adminpwd"
 }
 
-#variable "DOCKER_INFLUXDB_INIT_ADMIN_TOKEN" {
-#  description = "DOCKER_INFLUXDB_INIT_ADMIN_TOKEN"
-#  type        = string
-#  default     = "39477970d8cb52692dcfc689f1a2614ac074ca94e5e231489fbcaa00ccac7763"
-#}
-
-# Primary InfluxDB organization & bucket definitions FLUX
-#
-#variable "DOCKER_INFLUXDB_HOSTNAME" {
-#  description = "URL for influx db"
-#  type        = string
-#  default     = "ec2-35-80-237-168.us-west-2.compute.amazonaws.com"
-#}
 
 variable "DOCKER_INFLUXDB_INIT_ORG" {
   description = "DOCKER_INFLUXDB_INIT_ORG"
