@@ -17,5 +17,5 @@ DOCKER_INFLUXDB_INIT_PORT = 8086
 DOCKER_INFLUXDB_INIT_HOST = "influxdb"
 TELEGRAF_CFG_PATH = "./telegraf/telegraf.conf"
 GRAFANA_PORT = 3000
-DOCKER_INFLUXDB_HOSTNAME = "ec2-35-80-237-168.us-west-2.compute.amazonaws.com"
+#DOCKER_INFLUXDB_HOSTNAME = "localhost"
 

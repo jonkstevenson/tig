@@ -30,11 +30,11 @@ variable "DOCKER_INFLUXDB_INIT_ADMIN_TOKEN" {
 
 # Primary InfluxDB organization & bucket definitions FLUX
 #
-variable "DOCKER_INFLUXDB_HOSTNAME" {
-  description = "URL for influx db"
-  type        = string
-  default     = "ec2-35-80-237-168.us-west-2.compute.amazonaws.com"
-}
+#variable "DOCKER_INFLUXDB_HOSTNAME" {
+#  description = "URL for influx db"
+#  type        = string
+ # default     = "ec2-35-80-237-168.us-west-2.compute.amazonaws.com"
+#}
 
 variable "DOCKER_INFLUXDB_INIT_ORG" {
   description = "DOCKER_INFLUXDB_INIT_ORG"
