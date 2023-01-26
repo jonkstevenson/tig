@@ -1,3 +1,8 @@
+resource "random_password" "password" {
+  length = 16
+  special = true
+}
+
 module "system_config" {
   source = "./modules/system-config"
 
@@ -14,7 +19,7 @@ module "docker_composer" {
  
   DOCKER_INFLUXDB_INIT_MODE = var.DOCKER_INFLUXDB_INIT_MODE
   DOCKER_INFLUXDB_INIT_USERNAME = var.DOCKER_INFLUXDB_INIT_USERNAME
-  DOCKER_INFLUXDB_INIT_PASSWORD = var.DOCKER_INFLUXDB_INIT_PASSWORD
+  DOCKER_INFLUXDB_INIT_PASSWORD = random_password.password.result
   DOCKER_INFLUXDB_INIT_ORG = var.DOCKER_INFLUXDB_INIT_ORG
   DOCKER_INFLUXDB_INIT_BUCKET = var.DOCKER_INFLUXDB_INIT_BUCKET
   DOCKER_INFLUXDB_INIT_RETENTION = var.DOCKER_INFLUXDB_INIT_RETENTION

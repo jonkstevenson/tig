@@ -1,13 +1,13 @@
 ##  System Updates ##
 
-system_update = false
-system_upgrade = false
+system_update = true
+system_upgrade = true
 install_git = false
-install_docker = false
-install_docker_compose = false
+install_docker = true
+install_docker_compose = true
 
 DOCKER_INFLUXDB_INIT_MODE = "setup"
-DOCKER_INFLUXDB_INIT_USERNAME = "jon"
+DOCKER_INFLUXDB_INIT_USERNAME = "admin"
 DOCKER_INFLUXDB_INIT_PASSWORD = "adminpwd"
 DOCKER_INFLUXDB_INIT_ORG = "jon"
 DOCKER_INFLUXDB_INIT_BUCKET = "telegraf"
