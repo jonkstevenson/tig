@@ -49,6 +49,7 @@ variable "DOCKER_INFLUXDB_INIT_MODE" {
 variable "DOCKER_INFLUXDB_INIT_USERNAME" {
   description = "DOCKER_INFLUXDB_INIT_USERNAME"
   type        = string
+  default     = "admin"
 
 }
 
