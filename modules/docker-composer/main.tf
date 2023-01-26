@@ -95,13 +95,24 @@ resource "null_resource" "update_default_telegraf_config" {
   ]
 }
 
+resource "null_resource" "give_telegraf_access_to_docker" {
+  provisioner "local-exec" {
+    when = create
+    command = "usermod -a -G docker _telegraf"
+  }
+  depends_on = [
+    null_resource.update_default_telegraf_config
+
+  ]
+}
+
 resource "null_resource" "restart_local_telegraf" {
   provisioner "local-exec" {
     when = create
     command = "systemctl daemon-reload && systemctl enable telegraf && systemctl restart telegraf"
   }
   depends_on = [
-    null_resource.update_environment_token
+    null_resource.give_telegraf_access_to_docker
 
   ]
 }
