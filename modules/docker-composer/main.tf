@@ -217,7 +217,7 @@ resource "null_resource" "update_grafana_dashboard_docker_composer" {
 }
 
 resource "local_file" "create_influxdb_config" { 
-    content = data.template_file.init_telegraf_config.rendered
+    content = data.template_file.init_influxdb_config.rendered
     filename = "./install_tig/influxdb.yaml"
   
   depends_on = [
