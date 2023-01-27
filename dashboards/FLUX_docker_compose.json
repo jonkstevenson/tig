@@ -1311,7 +1311,7 @@
         },
         "datasource": {
           "type": "influxdb",
-          "uid": "${datasource}"
+          "uid": "${DataSource}"
         },
         "definition": "buckets()",
         "hide": 0,

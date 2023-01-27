@@ -147,7 +147,7 @@ resource "null_resource" "docker_composer_install_tig" {
 resource "null_resource" "wait_for_docker" {
   provisioner "local-exec" {
     when = create
-    command = "sleep 30"
+    command = "sleep 15"
   }
 
   depends_on = [
