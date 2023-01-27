@@ -5,14 +5,14 @@ DOCKER_INFLUXDB_INIT_MODE=setup
 
 # Primary InfluxDB admin/superuser credentials
 #
-DOCKER_INFLUXDB_INIT_USERNAME=jonstevenson
-DOCKER_INFLUXDB_INIT_PASSWORD=Ollie2015
-DOCKER_INFLUXDB_INIT_ADMIN_TOKEN=39477970d8cb52692dcfc689f1a2614ac074ca94e5e231489fbcaa00ccac7763
+DOCKER_INFLUXDB_INIT_USERNAME=xx
+DOCKER_INFLUXDB_INIT_PASSWORD=xx
+DOCKER_INFLUXDB_INIT_ADMIN_TOKEN=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 # Primary InfluxDB organization & bucket definitions
 # 
-DOCKER_INFLUXDB_INIT_ORG=jon
-DOCKER_INFLUXDB_INIT_BUCKET=telegraf
+DOCKER_INFLUXDB_INIT_ORG=xx
+DOCKER_INFLUXDB_INIT_BUCKET=xxx
 
 # Primary InfluxDB bucket retention period
 #
