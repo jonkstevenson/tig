@@ -1309,13 +1309,17 @@
           "text": "telegraf",
           "value": "telegraf"
         },
-        "definition": "\tbuckets()",
+        "datasource": {
+          "type": "influxdb",
+          "uid": "${datasource}"
+        },
+        "definition": "buckets()",
         "hide": 0,
         "includeAll": false,
         "multi": false,
         "name": "bucket",
         "options": [],
-        "query": "\tbuckets()",
+        "query": "buckets()",
         "refresh": 1,
         "regex": "",
         "skipUrlSync": false,
