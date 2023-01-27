@@ -29,5 +29,5 @@ output notes {
 }
 
 output sg_notes {
-    value = "NOTE: if using a cloud provider insure ports 3000 and 8086 are available to access the remote sites"
+    value = "NOTE: if using a cloud provider ensure ports ${var.GRAFANA_PORT} and ${var.DOCKER_INFLUXDB_INIT_PORT} are available to access the remote sites"
 }
