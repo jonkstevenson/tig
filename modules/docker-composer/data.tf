@@ -31,8 +31,16 @@ data "template_file" "init_telegraf_config" {
 
 data "local_file" "influx_token_key" {
     filename = "./install_tig/token.key"
-    
+
  depends_on = [
    null_resource.generate_random_key
+ ]
+}
+
+data "local_file" "hostname" {
+    filename = "./install_tig/hostname"
+    
+ depends_on = [
+   null_resource.get_hostname
  ]
 }

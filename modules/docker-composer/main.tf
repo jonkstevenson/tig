@@ -60,6 +60,16 @@ resource "null_resource" "generate_random_key" {
   ]
 }
 
+resource "null_resource" "get_hostname" {
+  provisioner "local-exec" {
+    when = create
+    command = "hostname > ./install_tig/hostname"
+  }
+  depends_on = [
+    null_resource.update_telegraf_hostname
+  ]
+}
+
 
 resource "null_resource" "update_telegraf_token" {
   provisioner "local-exec" {
