@@ -23,3 +23,11 @@ output grafana_user {
 output grafana_pwd {
     value = "Grafana Password:  ${nonsensitive(random_password.password.result)}"
 }
+
+output notes {
+    value = "NOTE: the URL will be private address you may need to use public accessible names if using AWS/Azure/GCP"
+}
+
+output sg_notes {
+    value = "NOTE: if using a cloud provider insure ports 3000 and 8086 are available to access the remote sites"
+}
