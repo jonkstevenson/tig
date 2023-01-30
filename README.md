@@ -8,26 +8,28 @@ and easily without the need to work through individual installs and configuratio
 There is no black magic, to see how all this is installed simply review the associated terrform code. 
 
 
-#Environment: 
+# Environment: 
    Cloud Provider:  AWS
    OS: Ubuntu
    Model: t2micro / freetier
    DiskSpace: 20G
    Privs:  root priv required
    
-Note: this is all unix based and relies on Ubuntu. if another operating system is desired you will need to review all the terraform and 
+# Note: 
+this is all unix based and relies on Ubuntu. if another operating system is desired you will need to review all the terraform and 
 make the approriate adjustments.
 
 If you are using a Cloud Provider ensure you have access to your host on ports: ssh/22 , influxdb/8086 , and grafana/3000.
 
-#Requirements:
+# Requirements:
    git        # should be installed prior. needed to pull down github repo
    docker-ce  # install via terraform
    docker-compose  # install via terraform
    telegraf  # install via terraform
    terraform  # install via script
    
-Note:  AWS ubuntu image comes with git already installed. So there is no need to add any additional packages manually as all will be setup through
+# Note:  
+AWS ubuntu image comes with git already installed. So there is no need to add any additional packages manually as all will be setup through
 a script to install terraform and terraform itself to install the remaining items.
 
 
