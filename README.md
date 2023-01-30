@@ -28,22 +28,22 @@ Requirements:
 Note:  AWS ubuntu image comes with git already installed. So there is no need to add any additional packages manually as all will be setup through
 a script to install terraform and terraform itself to install the remaining items.
 
-Step 1:
+
    # login to your new aws instance
    #> ssh ubuntu@ec2-xx-xx-xx-xx.us-west-2.compute.amazonaws.com
-Step2:
+
    # become root once logged in
    ubuntu@ip-172-31-24-177>:  sudo -i 
-Step3:
+
    # cd to /opt to clone repo
    cd /opt
    git clone https://github.com/jonkstevenson/tig.git
    # cd to tig
    cd /opt/tig
-Step4:
+
    # install terraform 
    ./terraform_setup.sh
-Step5:
+
    # install TIG 
    cd /opt/tig
    terraform init && terraform validate && terraform apply -auto-approve
