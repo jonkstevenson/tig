@@ -68,13 +68,16 @@ influxdb_user = "Influxdb User: admin"
 Note: the internal IP is showing because this is an AWS EC2 instance. To access this remotely use the internal IP if accessible in your environment 
 or use a pulbic facing IP such as ec2-xx-xx-xx-xx.us-west-2.compute.amazonaws.com to connect:
 
-You should be able to connect remotely now to Grafana:
+
+# Grafana
+
+http://yourinstance.compute.amazonaws.com:3000
 
 Use the grafana admin / password combination outputed.
 
 You should be able to browse dashboards, two dashboards are provided as an example and use the newer FLUX lanquage.
   
-http://yourinstance.compute.amazonaws.com:3000
+# InfluxDB
 
 You should be able to connect remotely now to InfluxDB:
 
