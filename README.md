@@ -8,7 +8,7 @@ and easily without the need to work through individual installs and configuratio
 There is no black magic, to see how all this is installed simply review the associated terrform code. 
 
 
-Environment: 
+#Environment: 
    Cloud Provider:  AWS
    OS: Ubuntu
    Model: t2micro / freetier
@@ -20,7 +20,7 @@ make the approriate adjustments.
 
 If you are using a Cloud Provider ensure you have access to your host on ports: ssh/22 , influxdb/8086 , and grafana/3000.
 
-Requirements:
+#Requirements:
    git        # should be installed prior. needed to pull down github repo
    docker-ce  # install via terraform
    docker-compose  # install via terraform
