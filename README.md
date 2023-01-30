@@ -22,16 +22,10 @@ make the approriate adjustments.
 If you are using a Cloud Provider ensure you have access to your host on ports: ssh/22 , influxdb/8086 , and grafana/3000.
 
 # Requirements:
-   git        # should be installed prior. needed to pull down github repo
-   docker-ce  # install via terraform
-   docker-compose  # install via terraform
-   telegraf  # install via terraform
-   terraform  # install via script
+   The only software required to be on the host prior to running is "git". git is already installed on AWS
+   ubuntu images. All remaining requirements will be installed using the repo.
    
-# Note:  
-AWS ubuntu image comes with git already installed. So there is no need to add any additional packages manually as all will be setup through
-a script to install terraform and terraform itself to install the remaining items.
-
+# install
 
    # login to your new aws instance
    #> ssh ubuntu@ec2-xx-xx-xx-xx.us-west-2.compute.amazonaws.com
