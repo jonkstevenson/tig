@@ -59,10 +59,10 @@ Successful deployment results in:
 
 Outputs:
 
-grafana_pwd = "Grafana Password:  CcsG0wH5C4yOR2sI"
+grafana_pwd = "Grafana Password:  xxxxxxxxxx"
 grafana_url = "Grafana URL: http://ip-xx-xx-xx-xx:3000"
 grafana_user = "Grafana User: admin "
-influxdb_pwd = "Influxdb Password:  CcsG0wH5C4yOR2sI"
+influxdb_pwd = "Influxdb Password:  xxxxxxxx"
 influxdb_url = "Influxdb URL: http://ip-xx-xx-xx-xx:8086"
 influxdb_user = "Influxdb User: admin"
 
