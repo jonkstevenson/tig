@@ -18,6 +18,8 @@ Environment:
 Note: this is all unix based and relies on Ubuntu. if another operating system is desired you will need to review all the terraform and 
 make the approriate adjustments.
 
+If you are using a Cloud Provider ensure you have access to your host on ports: ssh/22 , influxdb/8086 , and grafana/3000.
+
 Requirements:
    git        # should be installed prior. needed to pull down github repo
    docker-ce  # install via terraform
