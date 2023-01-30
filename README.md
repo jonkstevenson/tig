@@ -10,7 +10,7 @@ There is no black magic, to see how all this is installed simply review the asso
 
 # Environment: 
    Cloud Provider:  AWS
-   OS: Ubuntu
+   OS: Ubuntu_Server_22.04_LTS
    Model: t2micro / freetier
    DiskSpace: 20G
    Privs:  root priv required
