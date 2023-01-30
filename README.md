@@ -67,11 +67,36 @@ influxdb_user = "Influxdb User: admin"
 Note: the internal IP is showing because this is an AWS EC2 instance. To access this remotely use the internal IP if accessible in your environment 
 or use a pulbic facing IP such as ec2-xx-xx-xx-xx.us-west-2.compute.amazonaws.com to connect:
 
-You should be able to connect remotely now to:
-
-http://yourinstance.compute.amazonaws.com:3000
+You should be able to connect remotely now to Grafana:
 
 Use the grafana admin / password combination outputed.
 
 You should be able to browse dashboards, two dashboards are provided as an example and use the newer FLUX lanquage.
-   
+  
+http://yourinstance.compute.amazonaws.com:3000
+
+You should be able to connect remotely now to InfluxDB:
+
+http://yourinstance.compute.amazonaws.com:8086
+
+Use the influx admin / password combination outputed.
+
+# Shutdow
+
+If you plan on keeping your TIG stack and just shutdown you instance. The docker containers will NOT automatically restart. You will 
+need to do the following:
+
+# Restart Services Containers after System Shutdown
+cd /opt/tig/install_tig && docker-compose up -d 
+
+# Stop Services Containers
+cd /opt/tig/install_tig && docker-compose down
+
+# Destroy Everything
+Simply destroy your ec2 instances and everything is gone.
+
+# Terraform Destroy / Remove Config
+cd /opt/tig && terraform destroy -auto-approve
+
+Using terraform to tear down the configuration will only remove the docker compose configuration. Docker and other utilitites installed will remain.
+
