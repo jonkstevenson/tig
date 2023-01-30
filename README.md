@@ -28,7 +28,7 @@ Requirements:
 Note:  AWS ubuntu image comes with git already installed. So there is no need to add any additional packages manually as all will be setup through
 a script to install terraform and terraform itself to install the remaining items.
 
-Step1:
+Step 1:
    # login to your new aws instance
    #> ssh ubuntu@ec2-xx-xx-xx-xx.us-west-2.compute.amazonaws.com
 Step2:
