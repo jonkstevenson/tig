@@ -37,16 +37,23 @@ a script to install terraform and terraform itself to install the remaining item
 
    # cd to /opt to clone repo
    cd /opt
+   
+   # clone repository
    git clone https://github.com/jonkstevenson/tig.git
+   
    # cd to tig
    cd /opt/tig
 
    # install terraform 
    ./terraform_setup.sh
+   
+   # confirm working directory
+   /opt/tig
 
    # install TIG 
-   cd /opt/tig
    terraform init && terraform validate && terraform apply -auto-approve
+   
+We are installing with all the defaults which is valid for an AWS EC2 instances. Review the terraform.tfvars files for additional configurations are changes.
 
 Successful deployment results in:
 
