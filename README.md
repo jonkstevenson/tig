@@ -51,7 +51,8 @@ If you are using a Cloud Provider ensure you have access to your host on ports: 
    # install TIG 
    terraform init && terraform validate && terraform apply -auto-approve
    
-We are installing with all the defaults which is valid for an AWS EC2 instances. Review the terraform.tfvars files for additional configurations are changes.
+We are installing with all the defaults which are valid for an new/clean AWS EC2 instances. Review the terraform.tfvars files for additional configurationn
+changes if desired.
 
 Successful deployment results in:
 
