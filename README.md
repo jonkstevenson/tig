@@ -71,7 +71,7 @@ or use a pulbic facing IP such as ec2-xx-xx-xx-xx.us-west-2.compute.amazonaws.co
 
 You should be able to connect remotely now to:
 
-http://<yourinstance>.compute.amazonaws.com:3000
+http://yourinstance.compute.amazonaws.com:3000
 
 Use the grafana admin / password combination outputed.
 
