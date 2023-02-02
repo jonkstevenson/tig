@@ -1,4 +1,4 @@
-package awsrotate
+package rotate
 
 // Rotating things
 import (
