@@ -6935,25 +6935,7 @@
 #   #  "-I ALL" = "interrupts" # requires INT activity
 #
 #   ## Device tags can be used to add additional tags for devices.
-#   ## For example the configuration below adds a tag vg with value rootvg for
-#   ## all metrics with sda devices.
-#   # [[inputs.sysstat.device_tags.sda]]
-#   #  vg = "rootvg"
-
-
-# # Gather systemd units state
-# [[inputs.systemd_units]]
-#   ## Set timeout for systemctl execution
-#   # timeout = "1s"
-#   #
-#   ## Filter for a specific unit type, default is "service", other possible
-#   ## values are "socket", "target", "device", "mount", "automount", "swap",
-#   ## "timer", "path", "slice" and "scope ":
-#   # unittype = "service"
-#   #
-#   ## Filter for a specific pattern, default is "" (i.e. all), other possible
-#   ## values are valid pattern for systemctl, e.g. "a*" for all units with
-#   ## names starting with "a"
+vm
 #   # pattern = ""
 #   ## pattern = "telegraf* influxdb*"
 #   ## pattern = "a*"
